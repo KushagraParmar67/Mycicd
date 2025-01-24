@@ -27,11 +27,11 @@ jobs:
       run: yarn add netlify-cli
       
     - name: Install dependencies
-      run: npm install
+      run: yarn install
 
     # Run tests
     - name: Run tests
-      run: npm run test
+      run: yarn run test
 
     # Deploy to Netlify
     - name: Netlify Deploy
