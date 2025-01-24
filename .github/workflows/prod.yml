@@ -23,19 +23,12 @@ jobs:
         node-version: '20.x'
 
     # Install dependencies
-    - name: Install Netlify
-      run: yarn add netlify-cli
-      
     - name: Install dependencies
       run: yarn install
 
     # Run tests
     - name: Run tests
-<<<<<<< HEAD
       run: yarn test  
-=======
-      run: yarn run test
->>>>>>> fd40115be91c57e9690f1377e3ae4119ecfc4db5
 
     # Deploy to Netlify
     - name: Netlify Deploy
