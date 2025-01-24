@@ -21,6 +21,9 @@ jobs:
           node-version: '20.x'
 
       # Install dependencies
+      - name: Install Netlify CLI
+        run: yarn global add netlify-cli
+        
       - name: Install dependencies
         run: yarn install
 
